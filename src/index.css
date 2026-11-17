@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F6F7F8] text-[#1A1A1A] font-inter;
+  }
+}
+
+/* Custom scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Leaflet map custom markers */
+.custom-map-marker {
+  background: transparent;
+  border: none;
+}
+.user-map-marker {
+  background: transparent;
+  border: none;
+}
